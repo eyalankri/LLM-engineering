@@ -50,6 +50,18 @@ Each project includes its own `environment.yml` or `requirements.txt`.
 
 ---
 
+## 🔐 .env File
+
+Each project uses a `.env` file to store sensitive information like API keys. This keeps secrets out of your codebase and lets you load them securely using the `dotenv` package.
+
+Example `.env` file:
+
+```
+OPENAI_API_KEY=your-openai-key
+ANTHROPIC_API_KEY=your-anthropic-key
+GOOGLE_API_KEY=your-google-key
+```
+
 ## 🚀 Getting Started
 
 ```bash
