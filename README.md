@@ -1,86 +1,68 @@
-# 🧠 AI Code Explainer – Jupyter + Gradio + OpenAI
+# 🧠 AI Projects Collection
 
-Welcome to my personal project exploring how to build AI-powered tools using:
-- 🔍 OpenAI (GPT)
-- 💬 Gradio (UI)
-- 📒 Jupyter (experiments + demos)
-- 🧪 Python (`openai`, `gradio`, `dotenv`, etc.)
+This repository contains multiple AI projects exploring Large Language Models (LLMs), UI interfaces, and integrations with modern tools like OpenAI, Gradio, and Jupyter.
 
 ---
 
-## 📁 Project Structure
+## 📁 Projects
 
-```
-.
-├── app.ipynb                # Main Jupyter notebook
-├── explain_code_open_ai.py # Python function that sends code to OpenAI
-├── .env                     # Contains OpenAI API key
-├── requirements.txt         # All required packages
-└── README.md                # You're here!
-```
+### 1. `code-explainer`
+
+A Jupyter-based tool for explaining code snippets using OpenAI GPT models with a simple Gradio UI.
+
+**Stack:**
+
+- Python
+- OpenAI (GPT-4o-mini)
+- Gradio
+- Jupyter Lab
+- dotenv
+
+### 2. `store-chatbot`
+
+Simulates a clothing store assistant using GPT, with streaming responses and behavior logic to promote specific items (like hats).
+
+**Stack:**
+
+- Python
+- OpenAI
+- Gradio
+- dotenv
+
+### 3. `generate-brochure`
+
+AI-powered brochure generator that intelligently scrapes and summarizes content from company websites. Built as a notebook-driven prototype.
+
+**Stack:**
+
+- Python
+- OpenAI
+- Jupyter Notebook
+- BeautifulSoup (web scraping)
+- Requests
+- dotenv
 
 ---
 
-## 🚀 Features
+## 📦 Requirements
 
-- Input code (Python or other)
-- Send to OpenAI using `chat.completions`
-- Display Markdown-formatted explanation using Gradio
-- Support for future improvements: streaming, syntax highlighting, RAG
+Each project includes its own `environment.yml` or `requirements.txt`.
 
 ---
 
-## 🔧 Setup
-
-1. **Clone repo / open project folder**
-2. Create a virtual environment (optional but recommended)
-3. Install dependencies:
+## 🚀 Getting Started
 
 ```bash
-pip install -r requirements.txt
-```
-
-4. Add your `.env` file:
-
-```
-OPENAI_API_KEY=sk-...
-```
-
-5. Run the app:
-
-```bash
+cd project-name
+conda activate llms
 jupyter lab
 ```
 
-Then run the cell:
-
-```python
-view.launch(share=True)
-```
-
----
-
-## ✅ Dependencies
-
-- `gradio`
-- `openai`
-- `python-dotenv`
-- `IPython` (for local Markdown display, optional)
-- `jupyterlab` (if using notebook)
-
----
-
-## 📌 Notes
-
-- This is part of a learning journey to build AI agents.
-- The notebook grows over time as features are added.
-- Markdown-based explanations are preferred over plain text for clarity.
-- If you're using `gr.Markdown` – remember: it doesn’t support `label`.
+Make sure you add a `.env` file in each project with your API keys.
 
 ---
 
 ## ✍️ Author
 
-Eyal Ankri  
-Working with C#, .NET Core, NHibernate – now learning AI with Python  
-Israel, 2025  
+Eyal Ankri – AI & LLMs
+
