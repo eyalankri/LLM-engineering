@@ -13,6 +13,7 @@ A Jupyter-based tool for explaining code snippets using OpenAI GPT models with a
 **Stack:**
 
 - Python
+- Ollama (for running local LLMs)
 - OpenAI (GPT-4o-mini)
 - Gradio
 - Jupyter Lab
@@ -43,6 +44,8 @@ AI-powered brochure generator that intelligently scrapes and summarizes content 
 - dotenv
 
 ---
+
+
 
 ## 📦 Requirements
 
