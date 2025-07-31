@@ -43,11 +43,31 @@ AI-powered brochure generator that intelligently scrapes and summarizes content 
 - Requests
 - dotenv
 
+### 4. `airline-assistant`
+
+An interactive AI customer support chatbot for an airline company ("FlightAI"). It uses GPT-4o-mini with function calling to fetch ticket prices and store reservations, generate personalized DALL·E tickets, translate responses into Hebrew, and speak responses using text-to-speech.
+
+**Features:**
+
+- Function calling for ticket pricing and reservation handling
+- Tool-use logic to interact with external actions (like writing to file)
+- DALL·E integration to generate image-based boarding passes
+- Voice output using OpenAI `tts-1`
+- Real-time English–Hebrew translation
+- Gradio interface for chat + translation window
+
+**Stack:**
+
+- Python
+- OpenAI (GPT-4o-mini, DALL·E, TTS)
+- Gradio
+- dotenv
+- PIL (image handling)
+- `simpleaudio` + `IPython.display` (for voice playback)
+
 ---
 
-
-
-## 📦 Requirements
+## 🛆 Requirements
 
 Each project includes its own `environment.yml` or `requirements.txt`.
 
@@ -65,7 +85,7 @@ ANTHROPIC_API_KEY=your-anthropic-key
 GOOGLE_API_KEY=your-google-key
 ```
 
-## 🚀 Getting Started
+## ✨ Getting Started
 
 ```bash
 cd project-name
